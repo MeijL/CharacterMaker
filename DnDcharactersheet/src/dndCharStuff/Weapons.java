@@ -25,7 +25,7 @@ public class Weapons {
 	}
 	
 	public void addWeapons(String n, int m, String w) {
-		String weapon = "name: " + n + ", modifier: " + m + ", weapon: " + w;
+		String weapon = "name: " + n + ", modifier: " + m + ", weapon type: " + w;
 		weaponList.add(weapon);
 	}
 
