@@ -5,6 +5,7 @@ import java.util.List;
 public class CharClasses {
 	
 	List<String> classes;
+	List<String> skills;
 	
 	// Constructor to initialize the list that will contain names of all classes
 	
