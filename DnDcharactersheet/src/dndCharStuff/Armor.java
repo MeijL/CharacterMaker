@@ -20,6 +20,7 @@ public class Armor extends Inventory{
 		modifier = m;
 		armorType = a;
 		armorDescription = d;
+		addArmor(n, m, a);
 	}
 	
 	public void addArmor(String n, int m, String a) {
