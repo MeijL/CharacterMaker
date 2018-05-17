@@ -28,5 +28,17 @@ public class Weapons extends Inventory{
 		String weapon = "name: " + n + ", modifier: " + m + ", weapon type: " + w;
 		weaponList.add(weapon);
 	}
+	
+	public void getName() {
+		return name;
+	}
+	
+	public void getWeaponType() {
+		return weaponType;
+	}
+	
+	public void getWeaponDescription() {
+		return weaponDescription;
+	}
 
 }
