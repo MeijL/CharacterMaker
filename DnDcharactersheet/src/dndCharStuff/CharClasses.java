@@ -28,5 +28,9 @@ public class CharClasses {
 		}
 		return "No class found.";
 	}
+	
+	public void addSkills(String thing) {
+		skills.add(thing);
+	}
 
 }
