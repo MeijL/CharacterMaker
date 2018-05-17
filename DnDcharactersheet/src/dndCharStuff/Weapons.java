@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Weapons {
+public class Weapons extends Inventory{
 	
 	private String name;
 	private int modifier;
