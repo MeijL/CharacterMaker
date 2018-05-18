@@ -24,4 +24,7 @@ public class Inventory {
 		}
 		return "Item not found";
 	}
+	public void totalInventory() {
+		return items.size();
+	}
 }
