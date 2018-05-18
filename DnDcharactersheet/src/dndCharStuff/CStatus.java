@@ -40,6 +40,9 @@ public class CStatus {
 	
 	public void changeHitPoints(int h){
 		hitpoints -= h;
+		if (hitpoints <= 0) {
+			setActive(false);
+		}
 	}
 	public void changeNonlethal(int n){
 		nonlethal += n;
