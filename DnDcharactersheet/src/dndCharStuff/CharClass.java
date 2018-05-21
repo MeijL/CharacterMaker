@@ -10,19 +10,22 @@ public class CharClass {
 	
 // Constructor to initialize the class
 	
-	public CharClasses(String n) {
+	public CharClass(String n) {
 		name = n;
 	}
 	
 // Method to add class
 	
 	public void addClass(String thing) {
+		name += " " + thing;
 		
 	}
 	
 // Method to get class
 	
-	public void getClass(String thing) {
+	public void getClass() {
+		return name;
+	}
 	
 	
 	public void addSkills(String thing) {
