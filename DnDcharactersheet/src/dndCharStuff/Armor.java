@@ -1,42 +1,9 @@
 import java.util.List;
 
-public class Armor extends Inventory{
+public class Armor extends InvItem{
 	
-	private String name;
+	private String type;
+	private String armorClass;
 	private int modifier;
-	private String armorType;
-	private String armorDescription;
-	List<String> armor = new ArrayList<String>();
-	
-	public Armor() {
-		name = "generic name";
-		modifier = 0;
-		armorType = "generic type";
-		armorDescription = "none";
-	}
-	
-	public Armor(String n, int m, String a, String d) {
-		name = n;
-		modifier = m;
-		armorType = a;
-		armorDescription = d;
-		addArmor(n, m, a);
-	}
-	
-	public void addArmor(String n, int m, String a) {
-		String armorPiece = "Name: " + n + ", Modifier: " + m + ", Armor Type: " + a;
-		armor.add(armorPiece);
-	}
-	
-	public void getName() {
-		return name;
-	}
-	
-	public void getArmorType() {
-		return armorType;
-	}
-
-	public void getArmorDescription() {
-		return armorDescription;
-	}
+	private int magicId;
 }
