@@ -2,17 +2,17 @@ package dndCharStuff;
 
 import java.util.ArrayList;
 
-public class CStatus {
+public class CharStatus {
 	
 	private int hitpoints;
-	private int nonlethal;
-	private boolean active;
+	private int nonLethal;
+	private boolean conscious;
 	private ArrayList<Integer> effectIdList;
 	
-	public CStatus(int h){
+	public CharStatus(int h){
 		hitpoints = h;
-		nonlethal = 0;
-		active = true;
+		nonLethal = 0;
+		conscious = true;
 		effectIdList = new ArrayList<>();
 	}
 	
@@ -22,10 +22,10 @@ public class CStatus {
 		return hitpoints;
 	}
 	public int getNonlethal(){
-		return nonlethal;
+		return nonLethal;
 	}
-	public boolean getActive(){
-		return active;
+	public boolean getConscious(){
+		return conscious;
 	}
 	public boolean effectActive(int e){
 		for(int id: effectIdList){
@@ -38,11 +38,14 @@ public class CStatus {
 	
 //setters
 	
-	public void setHitPoints(int h){
-		hitpoints = h;
+	public void changeHitPoints(int h){
+		hitpoints -= h;
 	}
-	public void setNonlethal(int n){
-		nonlethal = n;
+	public void changeNonlethal(int n){
+		nonlethal += n;
+		if (nonlethal = hitpoints) {
+			setActive(false);
+		}
 	}
 	public void setActive(boolean a){
 		active = a;
