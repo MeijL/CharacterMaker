@@ -16,15 +16,4 @@ public class Inventory {
 	public void removeItem(String thing){
 		items.remove(thing);
 	}
-	public String getItem(String thing) {
-		for (int i = 0; i < items.size() - 1; i++) {
-			if (thing.equals(items.get(i))) {
-				return items.get(i);
-			}
-		}
-		return "Item not found";
-	}
-	public void totalInventory() {
-		return items.size();
-	}
 }
