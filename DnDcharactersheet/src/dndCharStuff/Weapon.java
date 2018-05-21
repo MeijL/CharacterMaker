@@ -1,3 +1,4 @@
+
 public class Weapon extends InvItem{
 
 	private String type;

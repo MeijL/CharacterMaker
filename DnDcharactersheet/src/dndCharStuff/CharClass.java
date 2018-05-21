@@ -10,7 +10,7 @@ public class CharClass {
 	
 // Constructor to initialize the class
 	
-	public CharClass(String n) {
+	public CharClasses(String n) {
 		name = n;
 	}
 	

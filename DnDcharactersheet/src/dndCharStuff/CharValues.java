@@ -1,4 +1,3 @@
-
 package dndCharStuff;
 
 public class CharValues {
@@ -52,15 +51,15 @@ public class CharValues {
 		constitution = i;
 	}
 	public void setInt(int i){
-		intelligence = i;
+		intelligence++;
 	}
 	public void setWis(int i){
-		wisdom = i;
+		wisdom++;
 	}
 	public void setCha(int i){
-		charisma = i;
+		charisma++;
 	}
 	public void setDex(int i){
-		dexterity = i;
+		dexterity++;
 	}
 }
