@@ -3,6 +3,7 @@ package dndCharStuff;
 public class Character {
   
   	private String name;
+  	private int level;
 	private CharRace race;
 	private CharStatus status;
 	private CharValues values;
@@ -34,6 +35,22 @@ public class Character {
 	
 	public void getLevel() {
 		return level;
+	}
+	
+	public void getRace() {
+		return race;
+	}
+	
+	public void getStatus() {
+		return status;
+	}
+	
+	public void getValues() {
+		return values;
+	}
+	
+	public void getInv() {
+		return inv;
 	}
 
 }
