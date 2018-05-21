@@ -27,9 +27,21 @@ public class CharClass {
 		return name;
 	}
 	
+// Method to add skills
 	
 	public void addSkills(String thing) {
 		skills.add(thing);
+	}
+	
+// Method to get skills
+	
+	public void getSkill(String thing) {
+		for (int i = 0; i < skills.size() - 1; i++) {
+			if (thing.equals(skills.get(i))) {
+				return skills.get(i);
+			}
+		}
+		return "No such skill exists";
 	}
 
 }
