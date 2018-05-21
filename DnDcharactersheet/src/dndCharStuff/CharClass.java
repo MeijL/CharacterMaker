@@ -23,7 +23,7 @@ public class CharClass {
 	
 // Method to get class
 	
-	public void getClass() {
+	public String getClass() {
 		return name;
 	}
 	
@@ -35,7 +35,7 @@ public class CharClass {
 	
 // Method to get skills
 	
-	public void getSkill(String thing) {
+	public String getSkill(String thing) {
 		for (int i = 0; i < skills.size() - 1; i++) {
 			if (thing.equals(skills.get(i))) {
 				return skills.get(i);
