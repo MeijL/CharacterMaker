@@ -21,7 +21,7 @@ public class Tool extends InvItem {
 	
 	// getter
 	
-	public void getUses() {
+	public int getUses() {
 		return uses;
 	}
 	
