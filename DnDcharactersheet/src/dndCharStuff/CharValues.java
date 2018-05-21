@@ -1,6 +1,7 @@
+
 package dndCharStuff;
 
-public class CharStats {
+public class CharValues {
 
 //Classic DnD stats
 	
@@ -42,24 +43,24 @@ public class CharStats {
 		return dexterity;
 	}
 
-//levelers
+//setters
 	
-	public void lvlStr(){
-		strength++;
+	public void setStr(int i){
+		strength = i;
 	}
-	public void lvlCon(){
-		constitution++;
+	public void setCon(int i){
+		constitution = i;
 	}
-	public void lvlInt(){
-		intelligence++;
+	public void setInt(int i){
+		intelligence = i;
 	}
-	public void lvlWis(){
-		wisdom++;
+	public void setWis(int i){
+		wisdom = i;
 	}
-	public void lvlCha(){
-		charisma++;
+	public void setCha(int i){
+		charisma = i;
 	}
-	public void lvlDex(){
-		dexterity++;
+	public void setDex(int i){
+		dexterity = i;
 	}
 }
