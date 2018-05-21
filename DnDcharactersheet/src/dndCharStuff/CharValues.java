@@ -51,15 +51,15 @@ public class CharValues {
 		constitution = i;
 	}
 	public void setInt(int i){
-		intelligence++;
+		intelligence = i;
 	}
 	public void setWis(int i){
-		wisdom++;
+		wisdom = i;
 	}
 	public void setCha(int i){
-		charisma++;
+		charisma = i;
 	}
 	public void setDex(int i){
-		dexterity++;
+		dexterity = i;
 	}
 }
