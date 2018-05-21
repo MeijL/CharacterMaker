@@ -29,28 +29,27 @@ public class Character {
   
   // getters
 	
-	public void getName() {
+	public String getName() {
 		return name;
 	}
 	
-	public void getLevel() {
+	public int getLevel() {
 		return level;
 	}
 	
-	public void getRace() {
+	public CharRace getRace() {
 		return race;
 	}
 	
-	public void getStatus() {
+	public CharStatus getStatus() {
 		return status;
 	}
 	
-	public void getValues() {
+	public CharValues getValues() {
 		return values;
 	}
 	
-	public void getInv() {
+	public Inventory getInv() {
 		return inv;
 	}
-
 }
