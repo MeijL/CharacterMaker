@@ -23,7 +23,7 @@ public class Character {
 	
   // increment for the level
   
-	public void incrementLevel() {
+	public void levelUp() {
 		level++;
 	}
   
