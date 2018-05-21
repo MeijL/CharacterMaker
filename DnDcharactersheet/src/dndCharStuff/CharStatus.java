@@ -42,13 +42,13 @@ public class CharStatus {
 		hitpoints -= h;
 	}
 	public void changeNonlethal(int n){
-		nonlethal += n;
-		if (nonlethal = hitpoints) {
-			setActive(false);
+		nonLethal += n;
+		if (nonLethal = hitpoints) {
+			isConscious(false);
 		}
 	}
-	public void setActive(boolean a){
-		active = a;
+	public void isConscious(boolean a){
+		conscious = a;
 	}
 	public void startEffect(int id){
 		effectIdList.add(id);
