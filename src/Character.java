@@ -9,6 +9,11 @@ public class Character {
 	private CharValues values;
 	private Inventory inv;
 	
+	private CharClass class1;
+	private CharClass class2;
+	private CharClass class3;
+	private CharClass class4;
+	
 	// Constructors for character
 	
 	public Character() {

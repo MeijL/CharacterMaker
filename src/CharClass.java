@@ -11,25 +11,25 @@ public class CharClass {
 	
 	public CharClass(String n) {
 		name = n;
+		level = 0;
 	}
 	
-// Method to add class
+// Getters
 	
-	public void addClass(String thing) {
-		name += " " + thing;
-		
-	}
-	
-// Method to get class
-	
-	public String getCharClass() {
+	public String getName() {
 		return name;
 	}
+	public int getLevel(){
+		return level;
+	}
 	
-// Method to add skills
+// Methods to add or remove skills
 	
-	public void addSkills(String thing) {
+	public void addSkill(String thing) {
 		skills.add(thing);
+	}
+	public void removeSkill(String thing){
+		skills.remove(thing);
 	}
 	
 // Method to get skills
@@ -40,7 +40,7 @@ public class CharClass {
 				return skills.get(i);
 			}
 		}
-		return "No such skill exists";
+		return null;
 	}
 
 }
