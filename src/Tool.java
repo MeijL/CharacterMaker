@@ -1,13 +1,11 @@
 
+
 public class Tool extends InvItem {
 	
 	private int uses;
 	
-	public Tool() {
-		uses = 0;
-	}
-	
 	public Tool(String n, int u) {
+		super(n);
 		uses = u;
 	}
 	
