@@ -39,7 +39,7 @@ public class CharClass {
 // Method to get skills
 	
 	public String getSkill(String thing) {
-		for (int i = 0; i < skills.size() - 1; i++) {
+		for (int i = 0; i <= skills.size(); i++) {
 			if (thing.equals(skills.get(i))) {
 				return skills.get(i);
 			}
