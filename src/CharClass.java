@@ -23,6 +23,10 @@ public class CharClass {
 		return level;
 	}
 	
+	public void levelUp() {
+		level++;
+	}
+	
 // Methods to add or remove skills
 	
 	public void addSkill(String thing) {
