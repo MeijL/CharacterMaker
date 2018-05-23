@@ -17,7 +17,7 @@ public class Character {
 	// Constructors for character
 	
 	public Character() {
-		name = "Generic Hero";
+		name = "Generic_Hero";
 		level = 0;
 	}
 	

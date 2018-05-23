@@ -5,10 +5,12 @@ public class CharFile {
     public CharFile() {
     	
     }
-    public void readFile(String name){
+    public String readFile(String name){
         // name of file
         String fileName = name;
 
+        String fileCode = "";
+        
         // reference one line at a time
         String line = null;
 
@@ -22,7 +24,7 @@ public class CharFile {
                 new BufferedReader(fileReader);
 
             while((line = bufferedReader.readLine()) != null) {
-                System.out.println(line);
+                fileCode += line;
             }   
             // close file
             bufferedReader.close();         
@@ -37,10 +39,11 @@ public class CharFile {
                 "Error reading [" 
                 + fileName + "]");                  
         }
+        return fileCode;
     }
-    public void writeFile(String name){
+    public void writeFile(Character c){
     	// name of file
-        String fileName = name;
+        String fileName = c.getName()+".txt";
 
         try {
             // default encoding
