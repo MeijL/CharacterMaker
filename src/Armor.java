@@ -7,7 +7,8 @@ public class Armor extends InvItem{
 	private int modifier;
 	private int magicId;
 	
-	public Armor(String t, String a, int m, int id) {
+	public Armor(String n, String t, String a, int m, int id) {
+		super(n);
 		type = t;
 		armorClass = a;
 		modifier = m;

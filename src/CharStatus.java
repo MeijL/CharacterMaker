@@ -39,7 +39,7 @@ public class CharStatus {
 //setters
 	
 	public void changeHitPoints(int h){
-		hitpoints -= h;
+		hitpoints += h;
 	}
 	public void changeNonlethal(int n){
 		nonLethal += n;

@@ -6,7 +6,8 @@ public class Weapon extends InvItem{
 	private int modifier;
 	private int magicId;
 
-	public Weapon(String t, String w, int m, int id) {
+	public Weapon(String n, String t, String w, int m, int id) {
+		super(n);
 		type = t;
 		weaponClass = w;
 		modifier = m;

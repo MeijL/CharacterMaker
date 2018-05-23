@@ -37,24 +37,58 @@ public class Character {
 	public String getName() {
 		return name;
 	}
-	
 	public int getLevel() {
 		return level;
 	}
-	
 	public CharRace getRace() {
 		return race;
 	}
-	
 	public CharStatus getStatus() {
 		return status;
 	}
-	
 	public CharValues getValues() {
 		return values;
 	}
-	
 	public Inventory getInv() {
 		return inv;
+	}
+	public CharClass getClass1(){
+		return class1;
+	}
+	public CharClass getClass2(){
+		return class2;
+	}
+	public CharClass getClass3(){
+		return class3;
+	}
+	public CharClass getClass4(){
+		return class4;
+	}
+	
+	// Setters
+	
+	public void setName(String n){
+		name = n;
+	}
+	public void setLevel(int l){
+		level = l;
+	}
+	public void setRace(CharRace r){
+		race = r;
+	}
+	
+	//Class setting
+	
+	public void setClass1(CharClass c){
+		class1 = c;
+	}
+	public void setClass2(CharClass c){
+		class2 = c;
+	}
+	public void setClass3(CharClass c){
+		class3 = c;
+	}
+	public void setClass4(CharClass c){
+		class4 = c;
 	}
 }
