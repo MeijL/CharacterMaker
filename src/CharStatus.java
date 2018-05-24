@@ -43,7 +43,7 @@ public class CharStatus {
 	}
 	public void changeNonlethal(int n){
 		nonLethal += n;
-		if (nonLethal == hitpoints) {
+		if (nonLethal => hitpoints) {
 			conscious = false;
 		}
 	}
