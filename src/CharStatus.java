@@ -24,7 +24,7 @@ public class CharStatus {
 	public int getNonlethal(){
 		return nonLethal;
 	}
-	public boolean getConscious(){
+	public boolean isConscious(){
 		return conscious;
 	}
 	public boolean effectActive(int e){
