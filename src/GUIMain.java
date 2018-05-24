@@ -49,6 +49,11 @@ public class GUIMain extends JFrame {
 		JButton btnNewCharacter = new JButton("New Character");
 		btnNewCharacter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				JFrame frame = new JFrame("Character maker");
+				frame.setVisible(true);
+				frame.setSize(500, 400);
+				JLabel CharMaker = new JLabel("Character Builder");
+				frame.add(CharMaker);
 			}
 		});
 		contentPane.add(btnNewCharacter);
