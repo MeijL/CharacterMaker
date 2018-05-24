@@ -53,4 +53,10 @@ public class CharStatus {
 	public void endEffect(int id){
 		effectIdList.remove(id);
 	}
+	public void subHitPoints(int h) {
+		hitpoints -= h;
+	}
+	public void subNonLethal(int n) {
+		nonLethal -= n;
+	}
 }
