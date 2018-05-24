@@ -1,16 +1,8 @@
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.*;
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import java.awt.FlowLayout;
-import javax.swing.JLabel;
-import java.awt.GridLayout;
-import javax.swing.JButton;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-import javax.swing.JTabbedPane;
+import java.awt.*;
+import java.awt.event.*;
 
 public class GUIMain extends JFrame {
 
@@ -49,7 +41,7 @@ public class GUIMain extends JFrame {
 		JButton btnNewCharacter = new JButton("New Character");
 		btnNewCharacter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JFrame frame = new JFrame("Character maker");
+				JFrame frame = new JFrame("Character Maker");
 				frame.setVisible(true);
 				frame.setSize(500, 400);
 				JLabel CharMaker = new JLabel("Character Builder");
@@ -59,6 +51,15 @@ public class GUIMain extends JFrame {
 		contentPane.add(btnNewCharacter);
 		
 		JButton btnLoadCharacter = new JButton("Load Character");
+		btnLoadCharacter.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				JFrame frame = new JFrame("Character Loader");
+				frame.setVisible(true);
+				frame.setSize(500, 400);
+				JLabel CharMaker = new JLabel("Select a character");
+				frame.add(CharMaker);
+			}
+		});
 		contentPane.add(btnLoadCharacter);
 	}
 
