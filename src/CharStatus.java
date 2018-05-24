@@ -43,7 +43,7 @@ public class CharStatus {
 	}
 	public void changeNonlethal(int n){
 		nonLethal += n;
-		if (nonLethal => hitpoints) {
+		if (nonLethal >= hitpoints) {
 			conscious = false;
 		}
 	}
@@ -52,11 +52,5 @@ public class CharStatus {
 	}
 	public void endEffect(int id){
 		effectIdList.remove(id);
-	}
-	public void subHitPoints(int h) {
-		hitpoints -= h;
-	}
-	public void subNonLethal(int n) {
-		nonLethal -= n;
 	}
 }
