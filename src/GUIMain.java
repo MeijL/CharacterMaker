@@ -33,30 +33,53 @@ public class GUIMain extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new GridLayout(0, 1, 0, 0));
-		
+
 		JLabel lblTitleAndVersion = new JLabel("DnD 3.5 Character Manager v1.0");
 		contentPane.add(lblTitleAndVersion);
-		
+
 		JButton btnNewCharacter = new JButton("New Character");
 		btnNewCharacter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFrame frame = new JFrame("Character Maker");
 				frame.setVisible(true);
 				frame.setSize(500, 400);
-				JLabel CharMaker = new JLabel("Character Builder");
-				frame.add(CharMaker);
+				JPanel panel = new JPanel();
+				frame.add(panel);
+				JLabel charMaker = new JLabel("Character name:");
+				panel.add(charMaker);
+				JTextField charName = new JTextField(20);
+				panel.add(charName);
+				Character name = new Character(charName.getText());
+				JButton enter = new JButton("Enter");
+				panel.add(enter);
+				enter.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent e) {
+						JFrame raceFrame = new JFrame(charName.getText() + "'s Race");
+						raceFrame.setVisible(true);
+						raceFrame.setSize(500, 400);
+						JPanel racePanel = new JPanel();
+						raceFrame.add(racePanel);
+						JLabel charRace = new JLabel("Character race:");
+						racePanel.add(charRace);
+						JTextField textRace = new JTextField(20);
+						racePanel.add(textRace);
+						CharRace race = new CharRace(textRace.getText());
+						JButton raceEnter = new JButton("Enter");
+						racePanel.add(raceEnter);
+					}
+				});
 			}
 		});
 		contentPane.add(btnNewCharacter);
-		
+
 		JButton btnLoadCharacter = new JButton("Load Character");
 		btnLoadCharacter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JFrame frame = new JFrame("Character Loader");
 				frame.setVisible(true);
 				frame.setSize(500, 400);
-				JLabel CharMaker = new JLabel("Select a character");
-				frame.add(CharMaker);
+				JLabel charMaker = new JLabel("Select a character");
+				frame.add(charMaker);
 			}
 		});
 		contentPane.add(btnLoadCharacter);
