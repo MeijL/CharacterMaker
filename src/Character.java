@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 
 public class Character {
   
@@ -7,7 +7,7 @@ public class Character {
 	private CharRace race;
 	private CharStatus status;
 	private CharValues values;
-	private Inventory inv;
+	private ArrayList<InvItem> inv;
 	
 	private CharClass class1;
 	private CharClass class2;
@@ -16,23 +16,21 @@ public class Character {
 	
 	// Constructors for character
 	
-	public Character() {
-		name = "Generic_Hero";
-		level = 0;
-	}
-	
-	public Character(String n, int l) {
+	public Character(String n) {
 		name = n;
-		level = l;
+		level = 0;
+		race = null;
+		status = new CharStatus(100);
+		values = new CharValues();
+		inv = new ArrayList<InvItem>();
+		
+		class1 = null;
+		class2 = null;
+		class3 = null;
+		class4 = null;
 	}
-	
-  // increment for the level
-  
-	public void levelUp() {
-		level++;
-	}
-  
-  // getters
+
+	// getters
 	
 	public String getName() {
 		return name;
@@ -49,7 +47,7 @@ public class Character {
 	public CharValues getValues() {
 		return values;
 	}
-	public Inventory getInv() {
+	public ArrayList<InvItem> getInv() {
 		return inv;
 	}
 	public CharClass getClass1(){

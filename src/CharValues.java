@@ -12,13 +12,13 @@ public class CharValues {
 	private int dexterity;
 	
 	
-	public CharValues(int s, int c, int i, int w, int ch, int d){
-		strength = s;
-		constitution = c;
-		intelligence = i;
-		wisdom = w;
-		charisma = ch;
-		dexterity = d;
+	public CharValues(){
+		strength = 1;
+		constitution = 1;
+		intelligence = 1;
+		wisdom = 1;
+		charisma = 1;
+		dexterity = 1;
 	}
 	
 //getters

@@ -41,9 +41,9 @@ public class CharFile {
         }
         return fileCode;
     }
-    public void writeFile(Character c){
+    public void writeFile(String charCode){
     	// name of file
-        String fileName = c.getName()+".txt";
+        String fileName = charCode.substring(0,charCode.indexOf(">"))+".txt";
 
         try {
             // default encoding

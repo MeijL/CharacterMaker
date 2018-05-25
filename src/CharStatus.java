@@ -35,10 +35,13 @@ public class CharStatus {
 		}
 		return false;
 	}
+	public ArrayList<Integer> getEffectList(){
+		return effectIdList;
+	}
 	
 //setters
 	
-	public void changeHitPoints(int h){
+	public void changeHealth(int h){
 		hitpoints += h;
 	}
 	public void changeNonlethal(int n){
@@ -52,5 +55,9 @@ public class CharStatus {
 	}
 	public void endEffect(int id){
 		effectIdList.remove(id);
+	}
+	
+	public void setHealth(int h){
+		hitpoints = h;
 	}
 }

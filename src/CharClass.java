@@ -1,17 +1,18 @@
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class CharClass {
 	
 	String name;
 	int level;
-	List<String> skills;
+	ArrayList<String> skills;
 	
 // Constructor to initialize the class
 	
 	public CharClass(String n) {
 		name = n;
 		level = 0;
+		skills = new ArrayList<>();
 	}
 	
 // Getters
