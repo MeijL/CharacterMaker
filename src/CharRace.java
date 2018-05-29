@@ -46,6 +46,9 @@ public class CharRace {
 	
 //setters
 	
+	public void setName(String n){
+		name = n;
+	}
 	public void setStrMod(int i){
 		strMod = i;
 	}

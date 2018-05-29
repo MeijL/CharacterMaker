@@ -46,7 +46,6 @@ public class CharFile {
         String fileName = charCode.substring(0,charCode.indexOf(">"))+".txt";
 
         try {
-            // default encoding
             FileWriter fileWriter =
                 new FileWriter(fileName);
 
@@ -55,8 +54,35 @@ public class CharFile {
                 new BufferedWriter(fileWriter);
 
             // write to file
-            bufferedWriter.write("placeholder text");
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
             bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
+            bufferedWriter.newLine();
+            bufferedWriter.write(charCode.substring(0, charCode.indexOf("<")+1));
+            charCode = charCode.substring(charCode.indexOf("<")+1);
 
             // close file
             bufferedWriter.close();

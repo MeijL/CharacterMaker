@@ -24,8 +24,8 @@ public class CharClass {
 		return level;
 	}
 	
-	public void levelUp() {
-		level++;
+	public ArrayList<String> getSkillList() {
+		return skills;
 	}
 	
 // Methods to add or remove skills

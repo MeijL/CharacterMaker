@@ -44,6 +44,9 @@ public class CharStatus {
 	public void changeHealth(int h){
 		hitpoints += h;
 	}
+	public void setNonlethal(int n){
+		nonLethal = n;
+	}
 	public void changeNonlethal(int n){
 		nonLethal += n;
 		if (nonLethal >= hitpoints) {
