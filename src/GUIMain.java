@@ -146,7 +146,7 @@ public class GUIMain extends JFrame {
 										playerPanel.add(playerClass);
 										JLabel playerRace =
 												new JLabel("Character Race: " 
-										+ charRace.getName());
+										+ race.getName());
 										playerPanel.add(playerRace);
 										JLabel playerLVL =
 												new JLabel("Character Level: "
