@@ -106,6 +106,54 @@ public class GUIMain extends JFrame {
 								classFrame.setVisible(true);
 								classFrame.setSize(500, 400);
 								classFrame.setLayout(classLayout);
+								JPanel classPanel = new JPanel();
+								classFrame.add(classPanel);
+								JLabel charClass = new JLabel("Character Class: ");
+								classPanel.add(charClass);
+								JTextField textClass = new JTextField(10);
+								classPanel.add(textClass);
+								JLabel classSkill = new JLabel("Add Skill:  ");
+								classPanel.add(classSkill);
+								JTextField textSkill = new JTextField(10);
+								classPanel.add(textSkill);
+								JLabel classSkill2 = new JLabel("Add Skill:  ");
+								classPanel.add(classSkill2);
+								JTextField textSkill2 = new JTextField(10);
+								classPanel.add(textSkill2);
+								JButton classEnter = new JButton("Enter");
+								classPanel.add(classEnter);
+								classEnter.addActionListener(new ActionListener() {
+									public void actionPerformed(ActionEvent e) {
+										CharClass charClass = new 
+												CharClass(textClass.getText());
+										charClass.addSkill(textSkill.getText());
+										charClass.addSkill(textSkill2.getText());
+										GridLayout playerLayout = new GridLayout(0,2);
+										JFrame playerFrame = new JFrame(charName.getText() 
+												+ "'s Info");
+										playerFrame.setVisible(true);
+										playerFrame.setSize(500, 400);
+										playerFrame.setLayout(playerLayout);
+										JPanel playerPanel = new JPanel();
+										playerFrame.add(playerPanel);
+										JLabel playerName =
+												new JLabel("Character Name: " 
+										+ charName.getText());
+										playerPanel.add(playerName);
+										JLabel playerClass = 
+												new JLabel("Character Class: "
+										+ charClass.getName());
+										playerPanel.add(playerClass);
+										JLabel playerRace =
+												new JLabel("Character Race: " 
+										+ charRace.getName());
+										playerPanel.add(playerRace);
+										JLabel playerLVL =
+												new JLabel("Character Level: "
+										+ name.getLevel());
+										playerPanel.add(playerLVL);
+									}
+								});
 							}
 						});
 					}
