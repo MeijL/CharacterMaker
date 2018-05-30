@@ -25,7 +25,68 @@ public class CharCode {
 		charCode = charCode.substring(charCode.indexOf("<")+1);
 		finalChar.getStatus().setHealth(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
 		charCode = charCode.substring(charCode.indexOf(">")+1);
-		finalChar.getStatus().setNonlethal(Integer.parseInt)
+		finalChar.getStatus().setNonlethal(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf("<")+1);
+		while(!(charCode.substring(0, 1).equals("<"))){
+			finalChar.getStatus().startEffect(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+			charCode = charCode.substring(charCode.indexOf(">")+1);
+		}
+		charCode = charCode.substring(1);
+		finalChar.getValues().setStr(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getValues().setCon(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getValues().setInt(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getValues().setWis(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getValues().setCha(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getValues().setDex(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf("<")+1);
+		while(!(charCode.substring(0, 1).equals("<"))){
+			InvItem item = new InvItem(charCode.substring(0, charCode.indexOf(">")));
+			charCode = charCode.substring(charCode.indexOf(">")+1);
+			item.setValue(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+			finalChar.getInv().add(item);
+			charCode = charCode.substring(charCode.indexOf(">")+1);
+		}
+		charCode = charCode.substring(1);
+		finalChar.getClass1().setName(charCode.substring(0, charCode.indexOf(">")));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getClass1().setLevel(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		while(!(charCode.substring(0, 1).equals("<"))){
+			finalChar.getClass1().addSkill(charCode.substring(0, charCode.indexOf(">")));
+			charCode = charCode.substring(charCode.indexOf(">")+1);
+		}
+		charCode = charCode.substring(1);
+		finalChar.getClass2().setName(charCode.substring(0, charCode.indexOf(">")));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getClass2().setLevel(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		while(!(charCode.substring(0, 1).equals("<"))){
+			finalChar.getClass2().addSkill(charCode.substring(0, charCode.indexOf(">")));
+			charCode = charCode.substring(charCode.indexOf(">")+1);
+		}
+		charCode = charCode.substring(1);
+		finalChar.getClass3().setName(charCode.substring(0, charCode.indexOf(">")));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getClass3().setLevel(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		while(!(charCode.substring(0, 1).equals("<"))){
+			finalChar.getClass3().addSkill(charCode.substring(0, charCode.indexOf(">")));
+			charCode = charCode.substring(charCode.indexOf(">")+1);
+		}
+		charCode = charCode.substring(1);
+		finalChar.getClass4().setName(charCode.substring(0, charCode.indexOf(">")));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		finalChar.getClass4().setLevel(Integer.parseInt(charCode.substring(0, charCode.indexOf(">"))));
+		charCode = charCode.substring(charCode.indexOf(">")+1);
+		while(!(charCode.substring(0, 1).equals("<"))){
+			finalChar.getClass4().addSkill(charCode.substring(0, charCode.indexOf(">")));
+			charCode = charCode.substring(charCode.indexOf(">")+1);
+		}
 		return finalChar;
 	}
 	

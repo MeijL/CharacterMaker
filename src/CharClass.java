@@ -28,6 +28,15 @@ public class CharClass {
 		return skills;
 	}
 	
+// Setters
+	
+	public void setName(String n){
+		name = n;
+	}
+	public void setLevel(int l){
+		level = l;
+	}
+
 // Methods to add or remove skills
 	
 	public void addSkill(String thing) {
