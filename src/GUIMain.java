@@ -138,7 +138,7 @@ public class GUIMain extends JFrame {
 										playerFrame.add(playerPanel);
 										JLabel playerName =
 												new JLabel("Character Name: " 
-										+ charName.getText());
+										+ name.getName());
 										playerPanel.add(playerName);
 										JLabel playerClass = 
 												new JLabel("Character Class: "
