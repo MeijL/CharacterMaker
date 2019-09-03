@@ -1,4 +1,5 @@
-# final-dix-sept-erledigt
-2017 Final Team Project
+2017 Final Java Project
 
-Check the wiki for details and team pages.
+Project details involve creating a working game engine for popular table top roleplaying game Dungeons & Dragons.
+
+Project uses Java Swing programming in order to create pop up menus to allow for character selection (not implemented) or character creation.
